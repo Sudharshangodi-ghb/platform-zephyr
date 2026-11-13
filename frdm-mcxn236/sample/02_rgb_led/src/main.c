@@ -20,7 +20,7 @@ static const struct gpio_dt_spec led0 = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
 static const struct gpio_dt_spec led1 = GPIO_DT_SPEC_GET(LED1_NODE, gpios);
 static const struct gpio_dt_spec led2 = GPIO_DT_SPEC_GET(LED2_NODE, gpios);
 
-LOG_MODULE_REGISTER(rgb_logger, LOG_LEVEL_INF);
+LOG_MODULE_REGISTER(main_rgbled, LOG_LEVEL_INF);
 
 int main(void)
 {
@@ -51,7 +51,6 @@ int main(void)
     /* Blink each channel in sequence with a 1-second delay between updates. */
     LOG_INF("Toggling LEDs");
 
-    LOG_INF("LED 0 toggled");
     ret1 = gpio_pin_set_dt(&led0, 1);
     if (ret1 < 0) {
       LOG_ERR("Failed to set LED 0 high");

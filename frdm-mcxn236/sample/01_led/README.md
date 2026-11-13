@@ -5,7 +5,7 @@ This sample combines the Zephyr Hello World pattern with a simple LED blink appl
 Build:
 
 ```sh
-west build -p auto -b frdm_mcxn236/mcxn236 sample/01_led
+west build -p auto -b frdm_mcxn236 sample/01_led
 west flash
 ```
 

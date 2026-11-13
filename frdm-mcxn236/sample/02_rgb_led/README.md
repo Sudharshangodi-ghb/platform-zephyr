@@ -11,7 +11,7 @@ The application:
 ## Build
 
 ```sh
-west build -p auto -b frdm_mcxn236/mcxn236 sample/02_rgb_led
+west build -p auto -b frdm_mcxn236 sample/02_rgb_led
 west flash
 ```
 
